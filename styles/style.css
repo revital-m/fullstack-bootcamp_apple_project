@@ -52,3 +52,31 @@
   font-size: 1.8rem;
   padding-top: 0;
 }
+
+/* shop now */
+.shop_now {
+  background: #e34140;
+  display: flex;
+  justify-content: center;
+}
+
+.shop_now p {
+  color: #fefbfb;
+  font-family: sf-pro-display_regular;
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+.shop_now p i {
+  font-size: 1rem;
+}
+
+.shop_now p a {
+  color: #fefbfb;
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+
+.shop_now p a:hover {
+  text-decoration: underline;
+}
