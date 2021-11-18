@@ -1,0 +1,54 @@
+/* fonts */
+@font-face {
+  font-family: sf-pro-display_regular;
+  src: url("../assets/fonts/sf-pro-display_regular.woff2");
+}
+@font-face {
+  font-family: sf-pro-display_semibold;
+  src: url("../assets/fonts/sf-pro-display_semibold.woff2");
+}
+@font-face {
+  font-family: sf-pro-text_regular;
+  src: url("../assets/fonts/sf-pro-text_regular.woff2");
+}
+@font-face {
+  font-family: sf-pro-text_semibold;
+  src: url("../assets/fonts/sf-pro-text_semibold.woff2");
+}
+
+/* navbar */
+.navbar {
+  background: #333030;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+.navbar__info .navbar__info--item {
+  float: left;
+  overflow: auto;
+  padding: 1.5rem 2.5rem;
+  color: #b2b0b0;
+}
+
+.navbar__info--bag {
+  float: left;
+  overflow: auto;
+  padding: 0.3rem 2rem 0 2rem;
+}
+
+.navbar__info .navbar__info--item .navbar__info--link {
+  color: #b2b0b0;
+  text-decoration: none;
+  font-family: sf-pro-display_regular;
+  font-size: 1.4rem;
+}
+
+.navbar__info .navbar__info--item .navbar__info--link:hover {
+  color: #ffffff;
+}
+
+.navbar__info--icon {
+  font-size: 1.8rem;
+  padding-top: 0;
+}
