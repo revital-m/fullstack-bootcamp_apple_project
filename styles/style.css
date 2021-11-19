@@ -16,6 +16,18 @@
   src: url("../assets/fonts/sf-pro-text_semibold.woff2");
 } */
 
+:root {
+  /* --primary-color: #cbac81;
+  --light-blue-color: #cfdedc;
+  --primary-color-dark: #8b6939;
+  --secondary-color: #696969; */
+  --light-txt-color: #fefbfb;
+  --dark-color: #1d1d1f;
+  /* --btn-color: #1371d0; */
+  --btn-color: #0a6cce;
+  --nav-txt-color: #b2b0b0;
+}
+
 /* navbar */
 .navbar {
   background: #333030;
@@ -33,7 +45,7 @@
   float: left;
   overflow: auto;
   padding: 1.5rem 2.5rem;
-  color: #b2b0b0;
+  color: var(--nav-txt-color);
 }
 
 .navbar__info--bag {
@@ -43,7 +55,7 @@
 }
 
 .navbar__info .navbar__info--item .navbar__info--link {
-  color: #b2b0b0;
+  color: var(--nav-txt-color);
   text-decoration: none;
   font-family: sf-pro-display_regular;
   font-size: 1.4rem;
@@ -66,7 +78,7 @@
 }
 
 .shop_now p {
-  color: #fefbfb;
+  color: var(--light-txt-color);
   font-family: sf-pro-display_regular;
   font-size: 1.6rem;
   padding: 1.5rem 0;
@@ -77,7 +89,7 @@
 }
 
 .shop_now p a {
-  color: #fefbfb;
+  color: var(--light-txt-color);
   padding: 0 0.5rem;
   text-decoration: none;
 }
@@ -91,7 +103,6 @@ main {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1.5rem;
-  background: rebeccapurple;
 }
 
 .page {
@@ -104,18 +115,21 @@ main {
 }
 
 .page__mainText {
+  color: var(--dark-color);
   font-size: 5rem;
   margin: 5.5rem 0 0.5rem 0;
+  text-align: center;
 }
 
 .page__secondaryText {
+  color: var(--dark-color);
   font-size: 2.5rem;
   text-align: center;
   padding-top: 1rem;
 }
 
 .page__info--button {
-  color: #1371d0;
+  color: var(--btn-color);
   font-size: 1.3rem;
   font-weight: 100;
   justify-content: center;
@@ -128,7 +142,7 @@ main {
 }
 
 .page__info--button a {
-  color: #1371d0;
+  color: var(--btn-color);
   text-decoration: none;
   font-size: 2rem;
   padding-right: 0.5rem;
@@ -157,10 +171,113 @@ main {
   background: url("../assets/img/page2_img.jpg") no-repeat center center/cover;
 }
 
-.page2__info {
+.page2__info,
+.page3__info {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+/* page 3 */
+.page3 {
+  background: url("../assets/img/page3_img.jpg") no-repeat center center/cover;
+}
+
+.page3 .page3__info .page__mainText {
+  color: #f5f5f7;
+}
+
+.page3 .page3__info .page__secondaryText {
+  color: #fec2eb;
+}
+
+.page3 .page3__info .page__info--button,
+.page3 .page3__info .page__info--button a {
+  color: #2a92f6;
+}
+
+/* middle */
+.middle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.middle .page__mainText {
+  font-size: 4rem;
+  margin: 5.5rem 0 0rem 0;
+}
+
+.middle .page__secondaryText {
+  font-size: 2rem;
+}
+
+.middle .page__info--button {
+  font-size: 1rem;
+}
+
+.middle .page__info--button a {
+  font-size: 1.7rem;
+}
+
+.middle .page__info--button--item {
+  padding: 1rem;
+}
+
+.middle__info1 {
+  background: url("../assets/img/section1_img.jpg") no-repeat center
+    center/cover;
+}
+
+.middle__info2 {
+  background: url("../assets/img/section4_img.jpg") no-repeat center
+    center/cover;
+}
+
+.middle__info2--new {
+  color: #cf7a48;
+  font-size: 1.3rem;
+  padding: 3rem 0 1rem 0;
+  font-family: sf-pro-text_regular;
+  font-weight: 500;
+}
+
+.middle__info3 {
+  background: url("../assets/img/section3_img.jpg") no-repeat center
+    center/cover;
+}
+
+.middle__info4 {
+  background: url("../assets/img/section2_new_img.jpg") no-repeat center
+    center/cover;
+  padding-top: 5.5rem;
+}
+
+.middle__info5 {
+  background: url("../assets/img/section5_img.jpg") no-repeat center
+    center/cover;
+  padding-top: 5.5rem;
+}
+
+.middle__info6 {
+  background: url("../assets/img/section6_img.jpg") no-repeat center
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5.5rem 0 3.9rem 0;
+}
+
+.middle__info6 .page__info--button {
+  color: var(--light-txt-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.middle__info6 .page__info--button a {
+  color: var(--light-txt-color);
 }
