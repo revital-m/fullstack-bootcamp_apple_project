@@ -19,9 +19,14 @@
 /* navbar */
 .navbar {
   background: #333030;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar__info {
   display: flex;
   justify-content: center;
-  position: sticky;
 }
 
 .navbar__info .navbar__info--item {
@@ -82,6 +87,13 @@
 }
 
 /* utilits */
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  background: rebeccapurple;
+}
+
 .page {
   height: 79vh;
   display: flex;
@@ -89,6 +101,41 @@
   align-items: center;
   font-family: sf-pro-text_regular;
   cursor: pointer;
+}
+
+.page__mainText {
+  font-size: 5rem;
+  margin: 5.5rem 0 0.5rem 0;
+}
+
+.page__secondaryText {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.page__info--button {
+  color: #1371d0;
+  font-size: 1.3rem;
+  font-weight: 100;
+  justify-content: center;
+}
+
+.page__info--button--item {
+  float: left;
+  overflow: auto;
+  padding: 2rem;
+}
+
+.page__info--button a {
+  color: #1371d0;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.page__info--button a:hover {
+  text-decoration: underline;
 }
 
 /* page 1 */
@@ -102,23 +149,18 @@
 }
 
 .page1__info h1 {
-  font-size: 5rem;
   margin: 2.2rem 0 1.5rem 0;
 }
 
-.page1__info--button {
-  color: #1371d0;
-  font-size: 1.3rem;
-  font-weight: 100;
+/* page 2 */
+.page2 {
+  background: url("../assets/img/page2_img.jpg") no-repeat center center/cover;
 }
 
-.page1__info--button a {
-  color: #1371d0;
-  text-decoration: none;
-  font-size: 2rem;
-  padding-right: 0.5rem;
-}
-
-.page1__info--button a:hover {
-  text-decoration: underline;
+.page2__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
