@@ -3,18 +3,18 @@
   font-family: sf-pro-display_regular;
   src: url("../assets/fonts/sf-pro-display_regular.woff2");
 }
-@font-face {
+/* @font-face {
   font-family: sf-pro-display_semibold;
   src: url("../assets/fonts/sf-pro-display_semibold.woff2");
-}
+} */
 @font-face {
   font-family: sf-pro-text_regular;
   src: url("../assets/fonts/sf-pro-text_regular.woff2");
 }
-@font-face {
+/* @font-face {
   font-family: sf-pro-text_semibold;
   src: url("../assets/fonts/sf-pro-text_semibold.woff2");
-}
+} */
 
 /* navbar */
 .navbar {
@@ -78,5 +78,47 @@
 }
 
 .shop_now p a:hover {
+  text-decoration: underline;
+}
+
+/* utilits */
+.page {
+  height: 79vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sf-pro-text_regular;
+  cursor: pointer;
+}
+
+/* page 1 */
+.page1 {
+  background: #eeeffe;
+  justify-content: space-around;
+}
+
+.page1__info {
+  text-align: center;
+}
+
+.page1__info h1 {
+  font-size: 5rem;
+  margin: 2.2rem 0 1.5rem 0;
+}
+
+.page1__info--button {
+  color: #1371d0;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.page1__info--button a {
+  color: #1371d0;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.page1__info--button a:hover {
   text-decoration: underline;
 }
