@@ -17,13 +17,8 @@
 } */
 
 :root {
-  /* --primary-color: #cbac81;
-  --light-blue-color: #cfdedc;
-  --primary-color-dark: #8b6939;
-  --secondary-color: #696969; */
   --light-txt-color: #fefbfb;
   --dark-color: #1d1d1f;
-  /* --btn-color: #1371d0; */
   --btn-color: #0a6cce;
   --nav-txt-color: #b2b0b0;
 }
@@ -280,4 +275,114 @@ main {
 
 .middle__info6 .page__info--button a {
   color: var(--light-txt-color);
+}
+
+/* footer */
+footer {
+  background: #f5f5f7;
+}
+
+.footerContainer {
+  width: 65vw;
+  margin: auto;
+  padding: 1.5rem 0 3rem 0;
+}
+
+.footerContainer p {
+  font-family: sf-pro-text_regular;
+  font-size: 1.2rem;
+  color: #6e747f;
+  padding: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.footerContainer p a {
+  color: #42424b;
+  text-decoration: none;
+}
+
+.footerContainer p a:hover {
+  text-decoration: underline;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 2px solid #e3e3e7;
+  margin-top: 1rem;
+}
+
+.footer__links .footer__links__column {
+  overflow: auto;
+  font-family: sf-pro-text_regular;
+  line-height: 1.6;
+}
+
+.footer__links .footer__links__column .footer__links__column--title {
+  font-size: 1.2rem;
+  color: #42424b;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
+.footer__links .footer__links__column li {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+.footer__links .footer__links__column li a {
+  color: #42424b;
+  text-decoration: none;
+}
+
+.footer__links .footer__links__column li a:hover {
+  text-decoration: underline;
+}
+
+.footer__lower {
+  border-bottom: 2px solid #e3e3e7;
+  margin-top: 3rem;
+}
+
+.footerContainer .footer__lower a {
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+.footer__lower--items {
+  display: grid;
+  grid-template-columns: 1.3fr 2.2fr 1fr;
+  overflow: auto;
+  font-family: sf-pro-text_regular;
+  line-height: 1.6;
+  padding-top: 1rem;
+}
+
+.footer__lower--items .footer__lower--items--left {
+  font-size: 1.2rem;
+  color: #6e747f;
+}
+
+.footer__lower--items .footer__lower--items--middle,
+.footer__lower--items .footer__lower--items--right {
+  overflow: auto;
+  font-size: 1.2rem;
+  color: #6e747f;
+}
+
+.footer__lower--items .footer__lower--items--right {
+  text-align: right;
+}
+
+.footer__lower--items .footer__lower--items--middle a,
+.footer__lower--items .footer__lower--items--right a {
+  color: #42424b;
+  padding: 0 0.8rem;
+  text-decoration: none;
+}
+
+.footer__lower--items .footer__lower--items--middle a:hover,
+.footer__lower--items .footer__lower--items--right a:hover {
+  text-decoration: underline;
 }
