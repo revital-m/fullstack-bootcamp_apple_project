@@ -3,19 +3,13 @@
   font-family: sf-pro-display_regular;
   src: url("../assets/fonts/sf-pro-display_regular.woff2");
 }
-/* @font-face {
-  font-family: sf-pro-display_semibold;
-  src: url("../assets/fonts/sf-pro-display_semibold.woff2");
-} */
+
 @font-face {
   font-family: sf-pro-text_regular;
   src: url("../assets/fonts/sf-pro-text_regular.woff2");
 }
-/* @font-face {
-  font-family: sf-pro-text_semibold;
-  src: url("../assets/fonts/sf-pro-text_semibold.woff2");
-} */
 
+/* variables */
 :root {
   --light-txt-color: #fefbfb;
   --dark-color: #1d1d1f;
@@ -36,22 +30,22 @@
   justify-content: center;
 }
 
-.navbar__info .navbar__info--item {
-  float: left;
+.navbar__info .navbar__info--item,
+.navbar__info--bag {
   overflow: auto;
+}
+
+.navbar__info .navbar__info--item {
   padding: 1.5rem 2.5rem;
   color: var(--nav-txt-color);
 }
 
 .navbar__info--bag {
-  float: left;
-  overflow: auto;
   padding: 0.3rem 2rem 0 2rem;
 }
 
 .navbar__info .navbar__info--item .navbar__info--link {
   color: var(--nav-txt-color);
-  text-decoration: none;
   font-family: sf-pro-display_regular;
   font-size: 1.4rem;
 }
@@ -86,14 +80,9 @@
 .shop_now p a {
   color: var(--light-txt-color);
   padding: 0 0.5rem;
-  text-decoration: none;
 }
 
-.shop_now p a:hover {
-  text-decoration: underline;
-}
-
-/* utilits */
+/* main utilits */
 main {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -109,22 +98,28 @@ main {
   cursor: pointer;
 }
 
-.page__mainText {
+.page__mainText,
+.page__secondaryText {
   color: var(--dark-color);
+  text-align: center;
+}
+
+.page__mainText {
   font-size: 5rem;
   margin: 5.5rem 0 0.5rem 0;
-  text-align: center;
 }
 
 .page__secondaryText {
-  color: var(--dark-color);
   font-size: 2.5rem;
-  text-align: center;
   padding-top: 1rem;
 }
 
-.page__info--button {
+.page__info--button,
+.page__info--button a {
   color: var(--btn-color);
+}
+
+.page__info--button {
   font-size: 1.3rem;
   font-weight: 100;
   justify-content: center;
@@ -137,23 +132,19 @@ main {
 }
 
 .page__info--button a {
-  color: var(--btn-color);
-  text-decoration: none;
   font-size: 2rem;
   padding-right: 0.5rem;
 }
 
-.page__info--button a:hover {
-  text-decoration: underline;
-}
-
-/* page 1 */
+/* pages 1, 2, 3 */
 .page1 {
   background: #eeeffe;
   justify-content: space-around;
 }
 
-.page1__info {
+.page1__info,
+.page2__info,
+.page3__info {
   text-align: center;
 }
 
@@ -161,7 +152,6 @@ main {
   margin: 2.2rem 0 1.5rem 0;
 }
 
-/* page 2 */
 .page2 {
   background: url("../assets/img/page2_img.jpg") no-repeat center center/cover;
 }
@@ -170,12 +160,10 @@ main {
 .page3__info {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-/* page 3 */
 .page3 {
   background: url("../assets/img/page3_img.jpg") no-repeat center center/cover;
 }
@@ -267,12 +255,12 @@ main {
 }
 
 .middle__info6 .page__info--button {
-  color: var(--light-txt-color);
   font-size: 1.5rem;
   text-align: center;
   padding-top: 1rem;
 }
 
+.middle__info6 .page__info--button,
 .middle__info6 .page__info--button a {
   color: var(--light-txt-color);
 }
@@ -289,20 +277,8 @@ footer {
 }
 
 .footerContainer p {
-  font-family: sf-pro-text_regular;
-  font-size: 1.2rem;
-  color: #6e747f;
   padding: 0.5rem 0;
   line-height: 1.4;
-}
-
-.footerContainer p a {
-  color: #42424b;
-  text-decoration: none;
-}
-
-.footerContainer p a:hover {
-  text-decoration: underline;
 }
 
 .footer__links {
@@ -312,32 +288,33 @@ footer {
   margin-top: 1rem;
 }
 
+.footer__lower--items,
+.footerContainer p,
 .footer__links .footer__links__column {
-  overflow: auto;
   font-family: sf-pro-text_regular;
+}
+
+.footer__links .footer__links__column,
+.footer__links .footer__links__column li,
+.footer__lower--items {
   line-height: 1.6;
 }
 
 .footer__links .footer__links__column .footer__links__column--title {
-  font-size: 1.2rem;
-  color: #42424b;
   font-weight: 600;
   padding-top: 2rem;
 }
 
 .footer__links .footer__links__column li {
-  font-size: 1.2rem;
   padding-top: 1rem;
-  line-height: 1.6;
 }
 
-.footer__links .footer__links__column li a {
+.footerContainer p a,
+.footer__links .footer__links__column .footer__links__column--title,
+.footer__links .footer__links__column li a,
+.footer__lower--items .footer__lower--items--middle a,
+.footer__lower--items .footer__lower--items--right a {
   color: #42424b;
-  text-decoration: none;
-}
-
-.footer__links .footer__links__column li a:hover {
-  text-decoration: underline;
 }
 
 .footer__lower {
@@ -347,28 +324,35 @@ footer {
 
 .footerContainer .footer__lower a {
   color: var(--btn-color);
-  text-decoration: none;
 }
 
 .footer__lower--items {
   display: grid;
   grid-template-columns: 1.3fr 2.2fr 1fr;
-  overflow: auto;
-  font-family: sf-pro-text_regular;
-  line-height: 1.6;
   padding-top: 1rem;
 }
 
-.footer__lower--items .footer__lower--items--left {
-  font-size: 1.2rem;
+.footerContainer p,
+.footer__lower--items .footer__lower--items--left,
+.footer__lower--items .footer__lower--items--middle,
+.footer__lower--items .footer__lower--items--right {
   color: #6e747f;
 }
 
+.footerContainer p,
+.footer__links .footer__links__column .footer__links__column--title,
+.footer__links .footer__links__column li,
+.footer__lower--items .footer__lower--items--left,
+.footer__lower--items .footer__lower--items--middle,
+.footer__lower--items .footer__lower--items--right {
+  font-size: 1.2rem;
+}
+
+.footer__links .footer__links__column,
+.footer__lower--items,
 .footer__lower--items .footer__lower--items--middle,
 .footer__lower--items .footer__lower--items--right {
   overflow: auto;
-  font-size: 1.2rem;
-  color: #6e747f;
 }
 
 .footer__lower--items .footer__lower--items--right {
@@ -377,11 +361,25 @@ footer {
 
 .footer__lower--items .footer__lower--items--middle a,
 .footer__lower--items .footer__lower--items--right a {
-  color: #42424b;
   padding: 0 0.8rem;
+}
+
+/* a links & hover */
+.navbar__info .navbar__info--item .navbar__info--link,
+.shop_now p a,
+.page__info--button a,
+.footerContainer p a,
+.footer__links .footer__links__column li a,
+.footerContainer .footer__lower a,
+.footer__lower--items .footer__lower--items--middle a,
+.footer__lower--items .footer__lower--items--right a {
   text-decoration: none;
 }
 
+.shop_now p a:hover,
+.page__info--button a:hover,
+.footerContainer p a:hover,
+.footer__links .footer__links__column li a:hover,
 .footer__lower--items .footer__lower--items--middle a:hover,
 .footer__lower--items .footer__lower--items--right a:hover {
   text-decoration: underline;
