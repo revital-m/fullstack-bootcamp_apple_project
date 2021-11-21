@@ -30,18 +30,13 @@
   justify-content: center;
 }
 
-.navbar__info .navbar__info--item,
-.navbar__info--bag {
+.navbar__info .navbar__info--item {
   overflow: auto;
 }
 
 .navbar__info .navbar__info--item {
   padding: 1.5rem 2.5rem;
   color: var(--nav-txt-color);
-}
-
-.navbar__info--bag {
-  padding: 0.3rem 2rem 0 2rem;
 }
 
 .navbar__info .navbar__info--item .navbar__info--link {
