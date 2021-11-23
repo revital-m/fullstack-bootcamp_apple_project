@@ -360,22 +360,10 @@ footer {
 }
 
 /* a links & hover */
-.navbar__info .navbar__info--item .navbar__info--link,
-.shop_now p a,
-.page__info--button a,
-.footerContainer p a,
-.footer__links .footer__links__column li a,
-.footerContainer .footer__lower a,
-.footer__lower--items .footer__lower--items--middle a,
-.footer__lower--items .footer__lower--items--right a {
+.links_and_hover {
   text-decoration: none;
 }
 
-.shop_now p a:hover,
-.page__info--button a:hover,
-.footerContainer p a:hover,
-.footer__links .footer__links__column li a:hover,
-.footer__lower--items .footer__lower--items--middle a:hover,
-.footer__lower--items .footer__lower--items--right a:hover {
+.links_and_hover:hover {
   text-decoration: underline;
 }
